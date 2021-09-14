@@ -8,7 +8,7 @@ public class AddTwoIntegers {
             return null;
         } else{
 
-            LinkedList<Integer> result = new LinkedList<Integer>();
+            LinkedList<Integer> result = new LinkedList<>();
 
             ListIterator<Integer> number1Iterator = number1.listIterator();
             ListIterator<Integer> number2Iterator = number2.listIterator();
@@ -24,7 +24,7 @@ public class AddTwoIntegers {
                     unit2 = number2Iterator.next();
                 }
 
-                Integer unitResult;
+                int unitResult;
                 if (carry)
                     unitResult = unit1 + unit2 + 1;
                 else
